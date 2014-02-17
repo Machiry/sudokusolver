@@ -54,12 +54,19 @@ static int isThisUnique(int row, int col, int val) {
         return 1;
     }
 
+    isUnique = 1;
     for (i = 0; i < 9; i++) {
         if (i != col) {
             if (!currBox[row][i] && potentialValues[row][i][val - 1]) {
-                return 0;
+                isUnique = 0;
             }
         }
+    }
+    
+    if (isUnique) {
+        return 1;
+    }
+    for (i = 0; i < 9; i++) {
         if (i != row) {
             if (!currBox[i][col] && potentialValues[i][col][val - 1]) {
                 return 0;
