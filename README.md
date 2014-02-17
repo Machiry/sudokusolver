@@ -49,7 +49,7 @@ Number of rounds:3, Elapsed Time:0.034000 sec (0.000034 msec)
 
 Result Matrix:
 
-5 3 4   6 7 8   9 1 2
+5 3 4    6 7 8   9 1 2
 
 6 7 2   1 9 5   3 4 8
 
